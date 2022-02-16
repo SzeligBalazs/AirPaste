@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    color: #121212;
+}
+
+.main {
+    z-index: 0;
+    width: 100%;
+    height: 85vh;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    background-attachment: fixed;
+    background: url('./assets/Background.png') repeat-x;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main h1{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    color: #fff;
+    font-size: 15em;
+    animation: loadAnim 1s linear;
+    top: 25%;
+}
+
+.main img {
+    width: 65%;
+    animation: loadAnim 1s linear;
+}
+
+.about {
+    width: 100%;
+    height: 50%;
+}
+
+.about h1 {
+    position: relative;
+    text-align: center;
+    top: 300px;
+    font-size: 3em;
+}
+
+.about p {
+    position: relative;
+    text-align: center;
+    top: 300px;
+    font-size: 1.5em;
+    padding: 5%;
+}
+
+.about h1 span {
+    font-weight: bold;
+    transform: 1s;
+    text-shadow: rgb(113, 198, 255) 0 0 25px;
+}
+
+.about h1 span:hover {
+    transition: 1s;
+    font-weight: bold;
+    text-shadow: #fff 0 0 25px;
+}
+
+.roadmap {
+    width: 100%;
+    height: 50%;
+    top: 350px;
+    position: relative;
+}
+
+
+@keyframes loadAnim {
+    0% {
+        opacity: 0;
+        top: 0;
+    }
+    50% {
+        opacity: 0.4;
+    }
+    100% {
+        top: 25%;
+        opacity: 1;
+    }
+}
+
+
+@media all and (max-width: 850px) {
+    .main {
+        z-index: 0;
+        width: 100%;
+        height: 45vh;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        background-attachment: fixed;
+        background: url('./assets/Background.png') repeat-x;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main h1{
+        position: relative;
+        z-index: 1;
+        display: flex;
+        color: #fff;
+        font-size: 6em;
+        animation: loadAnim 1s linear;
+        top: 25%;
+    }
+    
+    .main img {
+        width: 60%;
+        animation: loadAnim 1s linear;
+        position: relative;
+        top: 100px;
+        content: url('./assets/Mobile.png');
+    }
+}
