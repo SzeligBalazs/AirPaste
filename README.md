@@ -11,7 +11,7 @@ I'm developing it with Flutter and I'm planning to publish to Web, Android and W
 ### Sending mode
 You can enter text to the input field. Then after pressing the send button the message will be sent.
 
-### Receive mode.
+### Receive mode
 In receive mode, you can get messages from the WebSocket server.
 The message is automatically copied to the clipboard.
 
