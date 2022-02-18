@@ -140,10 +140,10 @@ footer a {
     }
     
     .main img {
-        width: 60%;
+        max-width: 50%;
         animation: loadAnim 1s linear;
         position: relative;
-        top: 100px;
+        top: 110px;
         content: url('./assets/Mobile.png');
     }
 
