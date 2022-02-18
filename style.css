@@ -41,7 +41,7 @@ body {
 
 .about {
     width: 100%;
-    height: 60%;
+    min-height: 60%;
 }
 
 .about h1 {
@@ -76,12 +76,12 @@ footer {
     background: #121212;
     color: #fff;
     width: 100%;
-    height: 15%;
+    min-height: 15%;
     justify-content: center;
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 100px;
+    top: 60%;
     text-align: center;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
@@ -101,27 +101,36 @@ footer a {
 @keyframes loadAnim {
     0% {
         opacity: 0;
-        top: 0;
     }
     50% {
-        opacity: 0.4;
+        opacity: 0.5;
     }
     100% {
-        top: 25%;
         opacity: 1;
     }
 }
 
 
 @media all and (max-width: 850px) {
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        color: #121212;
+    }
+    
     .main {
         z-index: 0;
-        width: 100%;
-        height: 45vh;
+        min-height: 60vh;
+        padding-bottom: 2%;
         border-bottom-left-radius: 50px;
         border-bottom-right-radius: 50px;
         background-attachment: fixed;
-        background: url('./assets/Background.png') repeat-x;
+        background: url('./assets/Background.png');
         background-size: cover;
         display: flex;
         flex-direction: column;
@@ -136,7 +145,7 @@ footer a {
         color: #fff;
         font-size: 6em;
         animation: loadAnim 1s linear;
-        top: 25%;
+        padding: 10%;
     }
     
     .main img {
@@ -151,12 +160,12 @@ footer a {
         background: #121212;
         color: #fff;
         width: 100%;
-        height: 15%;
+        min-height: 15%;
         justify-content: center;
         display: flex;
         flex-direction: column;
         position: relative;
-        top: 100px;
+        top: 60%;
         text-align: center;
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
