@@ -531,12 +531,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(18 18 18 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/assets\/Background\.png\'\)\] {
-  background-image: url('/assets/Background.png');
-}
-
-.bg-\[url\(\'\.\.\/assets\/Background\.png\'\)\] {
-  background-image: url('../assets/Background.png');
+.bg-\[url\(\'https\:\/\/szeligbalazs\.github\.io\/AirPaste\/assets\/Background\.png\'\)\] {
+  background-image: url('https://szeligbalazs.github.io/AirPaste/assets/Background.png');
 }
 
 .bg-cover {
