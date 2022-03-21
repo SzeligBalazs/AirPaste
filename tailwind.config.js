@@ -1,11 +1,7 @@
 module.exports = {
   content: ['*.{html,js}'],
   theme: {
-    extend: {
-      backgroundImage: {
-        'banner': "url('./assets/Backround.png')",
-      },
-    },
+    extend: {},
     screens: {
       'mobile': '750px',
       // => @media (min-width: 640px) { ... }
